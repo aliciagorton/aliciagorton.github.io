@@ -274,7 +274,9 @@ img-port {
 #ex {
 	text-align: center;
 }
+#custom-collapse {
 
+}
 
 /* FOOTER */
 
@@ -306,4 +308,45 @@ img-port {
 
 #code {
 	color: rgb(85, 116, 146);
+}
+
+/* EXPERIENCE */
+
+
+
+/* MEDIA SCREEN */
+@media screen and (min-width: 768px) {
+
+.custom-collapse .collapse{
+	display:block;
+}  
+}
+/* intro */
+.s1 {
+	margin-top: 50px;
+	margin-bottom:350px;
+}
+/* tech */
+.s2 {
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+/* education */
+.s3 {
+	margin-top: 25px;
+	margin-bottom: 200px;
+}
+/* portfolio */
+.s4 {
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+/* experience */
+.s5 {
+	margin-top: 200px;
+	margin-bottom: 450px;
+}
+/* footer */
+.s6 {
+	margin-bottom: 50px;
 }
