@@ -1,0 +1,11 @@
+html, body {
+
+  padding-top: "70px";
+  
+}
+
+#root{
+
+  background:#082738;
+  min-height: 100vh;
+}
