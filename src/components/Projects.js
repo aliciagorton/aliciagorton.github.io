@@ -15,17 +15,16 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 //Project Images
-import project1 from './static/images/comingsoon.jpeg';
-import project2 from './static/images/Kuma.png';
-import project3 from './static/images/chuck.png';
-import project4 from './static/images/burger.png';
+import project1 from './static/comingsoon.jpeg';
+import project2 from './static/Kuma.png';
+import project3 from './static/chuck.png';
+import project4 from './static/burger.png';
 // import { MailRounded } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
     cardContainer: {
         margin: "40px 100px 60px 100px",
         maxWidth: 330,
-        
         boxShadow: "0 19px 38px rgba(0,0,0,0.40), 0 15px 12px rgba(0,0,0,0.30)",
     },
     title: {
@@ -39,7 +38,7 @@ const useStyles = makeStyles(theme => ({
         margin: "40px 100px 40px 100px",
     },
     summary: {
-        height: "410px",
+        height: "300px",
         color: "black",
         margin: "2px"
     },
@@ -61,13 +60,13 @@ const Projects = () => {
     return(
         <Box component="div">
             <Navbar />
-            <Typography className={classes.title}>
-                Projects
-            </Typography>
             <Box className={classes.mainContainer}>
+                <Typography className={classes.title}>
+                    Projects
+                </Typography>
                 <Grid container justify="center">
         
-                <Grid item xs={12} sm={8} md={6}>
+                <Grid item xs={12} sm={12} md={6}>
                     <Card className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia 

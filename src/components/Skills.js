@@ -1,94 +1,71 @@
- import React from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+// import List from '@material-ui/core/List';
+// import ListItem from '@material-ui/core/ListItem';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import ListItemText from '@material-ui/core/ListItemText';
+// import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import Grid from '@material-ui/core/Grid';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
+import Typography from '@material-ui/core/Typography';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: "#082738",
-    marginTop:"10px",
-    marginBottom:"30px",
-    textAlign: "center"
-  },
-  gridList: {
-    width: 500,
-  },
-  subheading: {
-    color: "#0f9994",
-    fontSize: "30px",
-    fontWeight: "bold",
-  },
-  skillSet: {
-    margin: "50px 0px",
-    paddingLeft: "150px",
-    justifyContent: 'space-around',
+    flexGrow: 1,
+    maxWidth: 752,
+    background: "#3b454a",
     textAlign: "center",
-  }
+  },
+  title: {
+    margin: theme.spacing(4, 0, 2),
+    color: "white",
+    fontSize: "30px",
+  },
+  body: {
+    color: "#a7c3d1",
+    fontSize: "18px",
+  },
 }));
 
-const Skills = () =>  {
-    const classes = useStyles();
-    const tileData = [
-        {
-            img: 'react.png',
-            title: 'React',
-        },
-        {
-            img: 'mongodb2.png',
-            title: 'MongoDB',
-        },
-        {
-            img: 'mysql2.png',
-            title: 'MySQL',
-        },
-        {
-            img: 'node.png',
-            title: 'Node',
-        },
-        {
-            img: 'express2.png',
-            title: 'Express',
-        },
-        {
-            img: 'js.png',
-            title: 'Javascript',
-        },
-        {
-            img: 'css.png',
-            title: 'CSS',
-        },
-        {
-            img: 'html2.png',
-            title: 'HTML',
-        },
-        {
-            img: 'materialui.png',
-            title: 'MaterialUI',
-        },
-        {
-            img: 'bootstrap4.png',
-            title: 'Bootstrap',
-        }
-    ]; 
+// function generate(element) {
+//   return [0, 1, 2].map((value) =>
+//     React.cloneElement(element, {
+//       key: value,
+//     }),
+//   );
+// }
 
-    return (
-        <div className={classes.skillSet}>
-            <Grid container item xs={12} sm={12} direction="row" justify="center" alignItems="center">
-                <p className={classes.subheading}>Technical Skills</p>
-            </Grid>
-            <Grid container item xs={9} sm={12} direction="row" justify="center" alignItems="center">
-                <GridList cellHeight={50} className={classes.gridList} cols={10}>
-                    {tileData.map(tile => <GridListTile key={tile.img} cols={tile.cols || 1}>
-                    <img src={tile.img} alt={tile.title} />
-                    </GridListTile>)}
-                </GridList>
-            </Grid>
-        </div>
-    );
-}  
- export default Skills;
+export default function ListSkills() {
+  const classes = useStyles();
+//   const [dense, setDense] = React.useState(false);
+//   const [secondary, setSecondary] = React.useState(false);
+
+  return (
+    <div className={classes.root}>
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={12}>
+          <Typography variant="h6" className={classes.title}>
+            Techical SKills 
+          </Typography>
+          <Typography paragraph className={classes.body}>
+            React   -   MongoDB    -   Express   -   Node   -     MySQL    -    Javascript     -    Css         HTML   -   Bootstrap   -   MaterialUI        
+          </Typography>
+    
+            {/* <List dense={dense}>
+              {generate(
+                <ListItem>
+                  <ListItemIcon>
+                    <DoubleArrowIcon />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Single-line item"
+                    secondary={secondary ? 'Secondary text' : null}
+                  />
+                </ListItem>,
+              )}
+            </List> */}
+        </Grid>
+      </Grid>
+    </div>
+  );
+}

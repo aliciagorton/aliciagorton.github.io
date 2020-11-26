@@ -12,6 +12,8 @@ const useStyles = makeStyles({
         "& .MuiBottomNavigationAction-root": {
             minWidth: 0,
             maxWidth: 300,
+            padding: "40px 40px 40px 40px",
+            
         },
         "& .MuiSvgIcon-root": {
             fill: "#039be5",

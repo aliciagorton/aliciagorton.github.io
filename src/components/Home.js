@@ -1,7 +1,9 @@
 import React from 'react';
 import Typed from 'react-typed';
-import {  Box, Typography } from '@material-ui/core';
+import {  Box,  Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import MailButton from './Button';
+import Footer from './Footer';
 
 
 //Styling
@@ -70,6 +72,8 @@ const Home = () => {
                         I'm a full-stack web developer based in Sacramento, CA that enjoys crafting websites, applications, and everything in between. I am looking for opportunities of growth in the fields of emerging technology and data science.
                     </Typography>
                 </Box>
+                <MailButton />
+                <Footer />
             </Box>
         </>
     );
