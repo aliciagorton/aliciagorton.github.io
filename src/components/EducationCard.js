@@ -14,10 +14,11 @@ import Card from '@material-ui/core/Card';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    justifyContent: "center",
     backgroundColor: "#3b454a", 
     boxShadow: "none",
-    padding: "2rem",
-    marginBottom: "5rem",
+    padding: "1rem",
+    
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
@@ -143,7 +144,7 @@ function Education() {
           direction="row" 
           justify="center"
           alignItems="center"
-          style={{marginBottom: "200px"}}
+          style={{marginBottom: "100px"}}
         >
           <TabPanel 
             value={value} 
@@ -162,7 +163,7 @@ function Education() {
             index={1} 
             dir={theme.direction}
           >
-            <span style={{color: "#3b454a"}}>
+            <span style={{color: "#3b454a",}}>
               University of Illinois at Urbana Champaign<br/>
               Urbana, IL<br/>
               August 2014 to May 2017

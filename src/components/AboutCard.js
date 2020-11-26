@@ -20,7 +20,7 @@ import img from './static/img.jpeg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: "4rem",
+    padding: "2rem",
     fontSize: "20px",
     background: "#082738",
     boxShadow: "none", 

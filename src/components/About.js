@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import { Grid }  from '@material-ui/core';
 // import Img from './static/images/img.jpeg';
 // import Skills from './Skills';
-import Education from './Education';
+import EducationCard from './EducationCard';
 import Footer from './Footer';
 import AboutCard from './AboutCard';
 
@@ -60,18 +60,17 @@ function About() {
     const classes = useStyles();
 
     return (
-        <Grid container item xs={12} sm={12} className={classes.root}>
+        <Grid container item xs={12}
+        className={classes.root}>
             <Grid container spacing={2} direction="row" justify="space-evenly" className={classes.imgContainer}>           
             </Grid>      
-            <Grid container item xs={12} sm={9}>
-                <AboutCard />
-                <Grid container item xs={12} sm={12} className={classes.Education}>
-                    <Education /> 
-                </Grid>         
+            <Grid container item xs={12} sm={10}>
+                <AboutCard />      
             </Grid> 
-            <Grid container item xs={12} sm={12} className={classes.Footer}>
-                <Footer />  
-             </Grid>
+            <Grid container item xs={12} sm={10}>
+                <EducationCard /> 
+            </Grid>  
+            <Footer /> 
         </Grid>   
     );
 }
