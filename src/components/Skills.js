@@ -11,10 +11,11 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    maxWidth: 752,
+    justifyContent: "center",
     background: "#3b454a",
     textAlign: "center",
+    boxShadow: "none",
+   
   },
   title: {
     margin: theme.spacing(4, 0, 2),

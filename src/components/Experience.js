@@ -1,9 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {Typography, Box, Button} from '@material-ui/core';
-import Navbar from './Navbar';
-import resume from './static/AliciaGorton.pdf'
-import Footer from './Footer';
+import resume from './static/AliciaGorton.pdf';
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
@@ -128,7 +126,6 @@ const Experience = () => {
     return(
         <Box className={classes.mainContainer}>
         <Box component="header" className={classes.mainContainer}>
-            <Navbar/>
             <Typography variant="h4" align="center" className={classes.heading}> 
             Experience
             </Typography>
@@ -251,7 +248,6 @@ const Experience = () => {
                     </Button>
                 </Box>
             </Box>
-            <Footer />
         </Box>
     );
 }

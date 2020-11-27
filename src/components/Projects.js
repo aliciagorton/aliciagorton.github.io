@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles'; 
 import {
-    Box,
     Grid, 
     Card, 
     CardActionArea, 
@@ -11,8 +10,6 @@ import {
     Button,
     Typography
 } from '@material-ui/core';
-import Navbar from './Navbar';
-import Footer from './Footer';
 
 //Project Images
 import project1 from './static/comingsoon.jpeg';
@@ -22,34 +19,50 @@ import project4 from './static/burger.png';
 // import { MailRounded } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
+    root: {
+        fontSize: "20px",
+        background: "#082738",
+        boxShadow: "none", 
+        padding: "10rem",
+
+    },
+    mainCard: {
+        // padding: "3rem",
+        background: "#a7c3d1",
+        textAlign: "center",
+    },
     cardContainer: {
         margin: "40px 100px 60px 100px",
         maxWidth: 330,
         boxShadow: "0 19px 38px rgba(0,0,0,0.40), 0 15px 12px rgba(0,0,0,0.30)",
+        background: "#3b454a",
     },
     title: {
-        color: "#0f9994", 
+        fontSize: "80px",
         fontWeight: "bold",
-        fontSize: "60px",
-        padding: "2rem 0",
-        textTransform: "uppercase",
+        color: "white", 
         textAlign: "center",
+        textTransform: "uppercase",
         justifyContent: "center",
-        margin: "40px 100px 40px 100px",
+      
     },
     summary: {
-        height: "300px",
-        color: "black",
-        margin: "2px"
+        height: "475px",
+        background: "#3b454a",
+        margin: "2px",
+        color: "#a7c3d1",
+        fontSize: "18px",
+        textAlign: "left",
     },
     heading: {
-        color: "#0288d1", 
+        color: "white", 
         fontWeight: "bold"
     },
     button: {
-        background:"#039be5", 
+        background:"#082738", 
         color: "white",
-        margin: "0px 25px 0px 50px",
+        margin: "8px 20px 8px 50px",
+        fontSize: "15px",
     },
 }))
 
@@ -58,45 +71,42 @@ const Projects = () => {
     const classes = useStyles();
 
     return(
-        <Box component="div">
-            <Navbar />
-            <Box className={classes.mainContainer}>
+        <Card component="div" className={classes.root}>
+            <Card className={classes.mainCard}>
                 <Typography className={classes.title}>
                     Projects
                 </Typography>
-                <Grid container justify="center">
+                <Grid item xs={12} sm={12} md={12} container justify="center" >
         
-                <Grid item xs={12} sm={12} md={6}>
-                    <Card className={classes.cardContainer}>
-                        <CardActionArea>
-                            <CardMedia 
-                                component="img" 
-                                alt="Project 1" 
-                                height="225" 
-                                image={project1}
-                            />
-                            <CardContent className={classes.cardContent}>
-                                <Typography gutterBottom variant="h5" className={classes.heading}>
-                                Leet
-                                </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
-                                This will be the final project that is required by the full-stack program. ~ Coming Soon ~
-                                </Typography>
-                            </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                            <Button size="small" className={classes.button} href="https://github.com/aliciagorton" target="_blank">
-                            Repository
-                            </Button>
-                            <Button size="small" className={classes.button} href="" target="_blank">
-                            Deployed 
-                            </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-            
-                <Grid item xs={12} sm={8} md={6}>
-                    <Card className={classes.cardContainer}>
+                    <div item xs={12} sm={8} md={6} className={classes.gridLayout}>
+                        <Card className={classes.cardContainer}>
+                            <CardActionArea>
+                                <CardMedia 
+                                    component="img" 
+                                    alt="Project 1" 
+                                    height="225" 
+                                    image={project1}
+                                />
+                                <CardContent className={classes.cardContent}>
+                                    <Typography gutterBottom variant="h5" className={classes.heading}>
+                                    Leet
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
+                                    This will be the final project that is required by the full-stack program. ~ Coming Soon ~
+                                    </Typography>
+                                </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                <Button size="small" className={classes.button} href="https://github.com/aliciagorton" target="_blank">
+                                Repository
+                                </Button>
+                                <Button size="small" className={classes.button} href="" target="_blank">
+                                Deployed 
+                                </Button>
+                            </CardActions>
+                        </Card>
+                    </div>
+                    <div className={classes.cardContainer}>
                         <CardActionArea>
                             <CardMedia 
                                 component="img" 
@@ -128,81 +138,80 @@ const Projects = () => {
                             Deployed
                             </Button>
                         </CardActions>
-                    </Card>
-                </Grid>
+                   
+                    </div>
                 
-                <Grid item xs={12} sm={8} md={6}>
-                    <Card className={classes.cardContainer}>
-                        <CardActionArea>
-                            <CardMedia 
-                                component="img" 
-                                alt="Project 3" 
-                                height="225" 
-                                image={project3}
-                            />
-                            <CardContent>
-                            <Typography gutterBottom variant="h5" className={classes.heading}>
-                            Chuck Norris Fan Page
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
-                            The first collaborative project. We went into this project wanting to thoroughly enjoy this project. Our assignment was to use two server-side APIs, a third-party API, make it interactive, and have a polished UI design.
-                            <br />
-                            <br />
-                            My role in this project was to make our APIs functional, along with the buttons functional with JavaScript. The biggest challenge in this project was understanding the DOM and working with the APIs.
-                            <br />
-                            <br />
-                            Javascript - CSS - Bulma- HTML 
-                            
-                            </Typography>
-                        </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" className={classes.button} href="https://github.com/aliciagorton/Project_One.git" target="_blank">
-                            Repository
-                            </Button>
-                            <Button size="small" className={classes.button} href="https://the-magic-dragon.github.io/The-Magic-D-Project-/" target="_blank">
-                            Deployed
-                            </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                
-                <Grid item xs={12} sm={8} md={6}>
-                    <Card className={classes.cardContainer}>
-                        <CardActionArea>
-                            <CardMedia 
-                                component="img" 
-                                alt="Project 4" 
-                                height="225" 
-                                image={project4}
-                            />
-                            <CardContent>
-                            <Typography gutterBottom variant="h5" className={classes.heading}>
-                            Workout Tracker
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
-                            This assignment involved creating a Mongo database with a Mongoose schema. Using routes with Express, user is able to create, track and view daily workouts. User is able to log multiple exercises on any given day. A user will be able to reach their fitness goals more quickly with this app. 
-                            <br />
-                            <br />
-                            MongoDB - Express - Node.js - JavaScript
-                            </Typography>
-                        </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" className={classes.button} href="https://github.com/aliciagorton/17-NoSQL-Workout-Tracker.git" target="_blank">
-                            Repository
-                            </Button>
-                            <Button size="small" className={classes.button} href="https://blooming-ridge-23540.herokuapp.com/" target="_blank">
-                            Deployed
-                            </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-            </Grid>
-        </Box>
-        <Footer />
-
-    </Box>
+              
+                    <div item xs={12} sm={8} md={6}>
+                        <Card className={classes.cardContainer}>
+                            <CardActionArea>
+                                <CardMedia 
+                                    component="img" 
+                                    alt="Project 3" 
+                                    height="225" 
+                                    image={project3}
+                                />
+                                <CardContent>
+                                <Typography gutterBottom variant="h5" className={classes.heading}>
+                                Chuck Norris Fan Page
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
+                                The first collaborative project. We went into this project wanting to thoroughly enjoy this project. Our assignment was to use two server-side APIs, a third-party API, make it interactive, and have a polished UI design.
+                                <br />
+                                <br />
+                                My role in this project was to make our APIs functional, along with the buttons functional with JavaScript. The biggest challenge in this project was understanding the DOM and working with the APIs.
+                                <br />
+                                <br />
+                                Javascript - CSS - Bulma- HTML 
+                                
+                                </Typography>
+                            </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" className={classes.button} href="https://github.com/aliciagorton/Project_One.git" target="_blank">
+                                Repository
+                                </Button>
+                                <Button size="small" className={classes.button} href="https://the-magic-dragon.github.io/The-Magic-D-Project-/" target="_blank">
+                                Deployed
+                                </Button>
+                            </CardActions>
+                        </Card>
+                    </div>
+                    
+                    <div item xs={12} sm={8} md={6}>
+                        <Card className={classes.cardContainer}>
+                            <CardActionArea>
+                                <CardMedia 
+                                    component="img" 
+                                    alt="Project 4" 
+                                    height="225" 
+                                    image={project4}
+                                />
+                                <CardContent>
+                                <Typography gutterBottom variant="h5" className={classes.heading}>
+                                Workout Tracker
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
+                                This assignment involved creating a Mongo database with a Mongoose schema. Using routes with Express, user is able to create, track and view daily workouts. User is able to log multiple exercises on any given day. A user will be able to reach their fitness goals more quickly with this app. 
+                                <br />
+                                <br />
+                                MongoDB - Express - Node.js - JavaScript
+                                </Typography>
+                            </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" className={classes.button} href="https://github.com/aliciagorton/17-NoSQL-Workout-Tracker.git" target="_blank">
+                                Repository
+                                </Button>
+                                <Button size="small" className={classes.button} href="https://blooming-ridge-23540.herokuapp.com/" target="_blank">
+                                Deployed
+                                </Button>
+                            </CardActions>
+                        </Card>
+                    </div>         
+                </Grid>                     
+            </Card>
+        </Card>
     );
 }
 
