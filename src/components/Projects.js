@@ -23,13 +23,12 @@ const useStyles = makeStyles(theme => ({
         fontSize: "20px",
         background: "#082738",
         boxShadow: "none", 
-        // padding: "10rem",
-
     },
     mainCard: {
-        // padding: "3rem",
+        marginTop: "40px",
         background: "#a7c3d1",
         textAlign: "center",
+        padding: "4em",
     },
     cardContainer: {
         margin: "40px 100px 60px 100px",
@@ -37,13 +36,13 @@ const useStyles = makeStyles(theme => ({
         boxShadow: "0 19px 38px rgba(0,0,0,0.40), 0 15px 12px rgba(0,0,0,0.30)",
         background: "#3b454a",
     },
-    title: {
+    projectsTitle: {
         fontSize: "80px",
         fontWeight: "bold",
         color: "white", 
         textAlign: "center",
         textTransform: "uppercase",
-        justifyContent: "center",
+        padding: "3rem 20rem"
       
     },
     summary: {
@@ -54,7 +53,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: "18px",
         textAlign: "left",
     },
-    heading: {
+    subHeading: {
         color: "white", 
         fontWeight: "bold"
     },
@@ -76,7 +75,7 @@ const Projects = () => {
         >
             <Card className={classes.root}>
                 <Card className={classes.mainCard}>
-                    <Typography className={classes.title}>
+                    <Typography className={classes.projectsTitle}>
                         Projects
                     </Typography>
                     <Grid item xs={12} sm={12} md={12} container justify="center" >
@@ -97,7 +96,7 @@ const Projects = () => {
                                         image={project1}
                                     />
                                     <CardContent className={classes.cardContent}>
-                                        <Typography gutterBottom variant="h5" className={classes.heading}>
+                                        <Typography gutterBottom variant="h5" className={classes.subheading}>
                                         Leet
                                         </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
@@ -124,7 +123,7 @@ const Projects = () => {
                                     image={project2}
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" className={classes.heading}>
+                                    <Typography gutterBottom variant="h5" className={classes.subheading}>
                                         Kuma
                                     </Typography>
                                     <Typography 
@@ -172,7 +171,7 @@ const Projects = () => {
                                         image={project3}
                                     />
                                     <CardContent>
-                                    <Typography gutterBottom variant="h5" className={classes.heading}>
+                                    <Typography gutterBottom variant="h5" className={classes.subheading}>
                                     Chuck Norris Fan Page
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
@@ -213,7 +212,7 @@ const Projects = () => {
                                         image={project4}
                                     />
                                     <CardContent>
-                                    <Typography gutterBottom variant="h5" className={classes.heading}>
+                                    <Typography gutterBottom variant="h5" className={classes.subheading}>
                                     Workout Tracker
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>

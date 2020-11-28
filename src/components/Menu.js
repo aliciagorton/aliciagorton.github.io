@@ -6,8 +6,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -29,6 +27,8 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    background:"#082738",
+    color: "white",
    
   },
   appBar: {
@@ -50,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: 36,
+    color: "white",
 
   },
   hide: {
@@ -63,6 +64,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#082738',
   },
   drawerOpen: {
+    color: "white",
+    background:"#082738",
     width: drawerWidth,
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
@@ -70,6 +73,8 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   drawerClose: {
+    color: "white",
+    background:"#082738",
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -81,6 +86,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   toolbar: {
+    color: "white",
+    background:"#082738",
+    height: "",
     display: 'flex',
     
     alignItems: 'center',
@@ -92,7 +100,13 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
+   
   },
+  BTN: {
+    color: "white",
+    background:"#082738",
+    borderRight: "none",
+  }
 }));
 
 export default function MiniDrawer() {
@@ -118,6 +132,7 @@ export default function MiniDrawer() {
         })}
       >
         <Toolbar>
+         
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -126,12 +141,12 @@ export default function MiniDrawer() {
             className={clsx(classes.menuButton, {
               [classes.hide]: open,
             })}
+            sttle={{color:"white"}}
           >
             <MenuIcon />
+  
           </IconButton>
-          <Typography variant="h6" noWrap>
-            Alicia Gorton
-          </Typography>
+        
         </Toolbar>
       </AppBar>
       <Drawer
@@ -152,9 +167,9 @@ export default function MiniDrawer() {
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </div>
-        <Divider />
+       
         
-        <List>
+        <List className={classes.BTN}>
           {[['Home', '#home'], ['About', '#about'], ['Projects', '#projects'], ['Experience', '#experience']].map((nav_item, index) => (
             <ListItem key={nav_item[0]} button component={Link} to={nav_item[1]}>
               <ListItemText primary={nav_item[0]} />
@@ -162,7 +177,7 @@ export default function MiniDrawer() {
           ))}
         </List>
 
-        <Divider />
+       
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />

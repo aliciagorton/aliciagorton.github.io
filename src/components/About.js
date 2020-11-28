@@ -10,46 +10,14 @@ const useStyles = makeStyles({
         justifyContent: "center",
         background: "#082738", 
         boxShadow: "none",
-        // padding: "4rem",
 
       },
-    imgContainer: {
-        marginTop: "40px",
-        marginBottom: "40px",
-        // paddingLeft: "200px",
-        paddingTop:"600px",
+    AboutContainer: {
+        // marginTop: "40px",
+        // marginBottom: "40px",
         borderStyle: "none",
         boxShadow: "none",
     },
-    heading: {
-        color: "#0f9994", 
-        fontWeight: "bold",
-        fontSize: "60px",
-        textTransform: "uppercase",
-    },
-    subHeading: {
-        color: "#8fc7e3",
-        padding: "0",
-    },
-    img: {
-        display: "flex",
-        height: 85,
-        width: 85,
-        borderRadius: "50%",
-        justifyContent: "center",
-        // marginLeft: "100px",
-    },
-
-    aboutMe: {
-        justifyContent: "center",
-        textAlign: "center",
-        marginBottom: "50px",
-    },
-    Footer: {
-        justifyContent: "center",
-        textAlign: "center",
-        marginBottom: "50px",
-    }
 });
 
 function About() {
@@ -69,7 +37,7 @@ function About() {
                 spacing={2} 
                 direction="row" 
                 justify="space-evenly" 
-                className={classes.imgContainer}
+                className={classes.AboutContainer}
             >           
                  
                 <div 

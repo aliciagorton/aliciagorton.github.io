@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
   body: {
     color: "#a7c3d1",
     fontSize: "18px",
+    boxShadow: "none",
   },
 }));
 

@@ -9,19 +9,23 @@ import MailButton from './Button';
 
 //Styling
 const useStyles = makeStyles({
-    root: {
+    rootHome: {
         fontSize: "20px",
         background: "#082738",
-        boxShadow: "none", 
+       
         // padding: "10rem",
     },
     mainCard: {
         // padding: "3rem",
-        background: "#a7c3d1",
+        background: "#082738",
         textAlign: "center",
+        boxShadow: "none",
+        padding: "1rem", 
+        marginTop: "40px",
+
     },
     title: {
-        color: "White",
+        color:  "#a7c3d1",
         fontSize: "20px",
         
     },
@@ -30,16 +34,15 @@ const useStyles = makeStyles({
         fontSize: "100px",
     },
 
-    descContainer: {
-        marginBottom: "3rem", 
+    cardDes: {
+        background: "#082738",
+        color: "#082738",        
+        boxShadow: "none", 
+        padding: "4rem",
     },
-
     desc: {
         fontSize: "20px",
-        color: "#0f9994",
-        paddingLeft: "120px",
-        paddingRight: "120px",
-
+        color: "#a7c3d1",
     },
 });
 
@@ -48,7 +51,7 @@ const Home = () => {
     return (
         <div
             id="home" 
-            className={classes.root}
+            className={classes.rootHome}
         >
             <Card className={classes.mainCard}>
                 <Typography className={classes.title}>
@@ -64,11 +67,12 @@ const Home = () => {
                     strings={["Alicia Gorton"]} 
                     typeSpeed={200}/>
                 </Typography>
-                <Typography className={classes.desc} >
-                    I'm a full-stack web developer based in Sacramento, CA that enjoys crafting websites, applications, and everything in between. I am looking for opportunities of growth in the fields of emerging technology and data science.
-                </Typography>
-                <MailButton /> 
-            
+                <Card className={classes.cardDes}>
+                    <Typography className={classes.desc} >
+                        I'm a full-stack web developer based in Sacramento, CA that enjoys crafting websites, applications, and everything in between. I am looking for opportunities of growth in the fields of emerging technology and data science.
+                    </Typography>
+                    <MailButton /> 
+                </Card>
             </Card>
         </div>
      

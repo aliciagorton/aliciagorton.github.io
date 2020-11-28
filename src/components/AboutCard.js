@@ -22,51 +22,39 @@ import img from './static/img.jpeg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: "2rem",
+    // padding: "2rem",
     fontSize: "20px",
     background: "#082738",
     boxShadow: "none", 
   },
-//   expand: {
-//     justifyContent:"left",
-//     transform: 'rotate(0deg)',
-//     marginLeft: 'auto',
-//     transition: theme.transitions.create('transform', {
-//       duration: theme.transitions.duration.shortest,
-//     }),
-//   },
-//   expandOpen: {
-//     transform: 'rotate(180deg)',
-//   },
-  AboutMeHeader: {
+  aboutTitle: {
     fontSize: "80px",
     fontWeight: "bold",
     color: "white",
     textAlign: "center",
     textTransform: "uppercase",
-    padding: "0rem 20rem"
+    // padding: "0rem 5rem"
   },
   cardContent: {
-    padding: "2rem",
-    background: "#a7c3d1",
+    // padding: "2rem",
+    background: "#a7c3d1", 
+ 
    
   },
   paragraph: {
     fontSize: "20px",
     color: "#3b454a",
     padding: "1.5rem 12rem",
-   
   },
   skillsBox: {
     fontSize: "20px",
     fontWeight: "bold",
     color: "#074563",
-    boxShadow: "none",
     background: "#a7c3d1",
   },
   iconBTN: { 
     textAlign: "right",
-  
+    fontSize: "40px",
   },
 
 }));
@@ -82,7 +70,7 @@ export default function AboutCard() {
   return (
     <Card className={classes.root}>
       <CardContent className={classes.cardContent}>
-        <Typography component="h3" variant="h3" className={classes.AboutMeHeader}>
+        <Typography component="h3" variant="h3" className={classes.aboutTitle}>
           <div className={classes.iconBTN}>
               <IconButton 
                   href="https://www.linkedin.com/in/alicia-gorton/" 
