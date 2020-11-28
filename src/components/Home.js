@@ -22,11 +22,12 @@ const useStyles = makeStyles({
         boxShadow: "none",
         padding: "1rem", 
         marginTop: "40px",
+        marginBottom: "100px",
 
     },
     title: {
         color:  "#a7c3d1",
-        fontSize: "20px",
+        fontSize: "30px",
         
     },
     name: {
@@ -38,10 +39,11 @@ const useStyles = makeStyles({
         background: "#082738",
         color: "#082738",        
         boxShadow: "none", 
-        padding: "4rem",
+        padding: "8em",
+
     },
     desc: {
-        fontSize: "20px",
+        fontSize: "30px",
         color: "#a7c3d1",
     },
 });

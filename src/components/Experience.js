@@ -3,6 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import {Typography, Box, Button} from '@material-ui/core';
 import resume from './static/AliciaGorton.pdf';
 import Card from '@material-ui/core/Card';
+import Footer from './Footer';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -101,7 +102,7 @@ const useStyles = makeStyles(theme => ({
     heading: {
         color: "White", 
         fontWeight: "bold",
-        fontSize: "60px",
+        fontSize: "80px",
         padding: "3rem 0",
     },
     subHeading: {
@@ -257,6 +258,7 @@ const Experience = () => {
                         </Button>
                     </Box>
                 </Card>
+                <Footer />
             </Box>
         </div>
     );

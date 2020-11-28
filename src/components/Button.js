@@ -10,7 +10,8 @@ import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles((theme) => ({
     button: {
-      margin: theme.spacing(1),
+      margin: "2rem",
+      fontSize: "1rem",
     },
   }));
 

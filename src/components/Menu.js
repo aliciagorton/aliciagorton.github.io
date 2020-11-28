@@ -62,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: 0,
     whiteSpace: 'nowrap',
     backgroundColor: '#082738',
+    borderRight: "none",
   },
   drawerOpen: {
     color: "white",
@@ -84,18 +85,20 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       width: theme.spacing(9) + 1,
     },
+    
   },
   toolbar: {
     color: "white",
     background:"#082738",
     height: "",
     display: 'flex',
-    
+    boxShadow: "none",
     alignItems: 'center',
     justifyContent: 'flex-end',
     padding: theme.spacing(0, 1),
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
+  
   },
   content: {
     flexGrow: 1,
@@ -107,6 +110,7 @@ const useStyles = makeStyles((theme) => ({
     background:"#082738",
     borderRight: "none",
   }
+
 }));
 
 export default function MiniDrawer() {
@@ -163,7 +167,7 @@ export default function MiniDrawer() {
         }}
       >
         <div className={classes.toolbar}>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={handleDrawerClose} className={classes.toolbar}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </div>

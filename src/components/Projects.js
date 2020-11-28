@@ -20,15 +20,14 @@ import project4 from './static/burger.png';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        fontSize: "20px",
         background: "#082738",
         boxShadow: "none", 
     },
     mainCard: {
-        marginTop: "40px",
+        marginTop: "30px",
         background: "#a7c3d1",
         textAlign: "center",
-        padding: "4em",
+        padding: "2em",
     },
     cardContainer: {
         margin: "40px 100px 60px 100px",
