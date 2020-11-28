@@ -1,6 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
-import {  Box,  Typography } from '@material-ui/core';
+import { Typography, Card} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import MailButton from './Button';
 // import Footer from './Footer';
@@ -9,26 +9,25 @@ import MailButton from './Button';
 
 //Styling
 const useStyles = makeStyles({
-    boxContainer: {
-        position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        width: "100vw",
-        textAlign: "center",
-        zIndex: 1,
-        
+    root: {
+        fontSize: "20px",
+        background: "#082738",
+        boxShadow: "none", 
+        // padding: "10rem",
     },
-    titleContainer: {
-        color: "#0f9994",
-        fontSize: "15px",
+    mainCard: {
+        // padding: "3rem",
+        background: "#a7c3d1",
+        textAlign: "center",
+    },
+    title: {
+        color: "White",
+        fontSize: "20px",
         
     },
     name: {
-        color: "#8fc7e3",
-        marginBottom: "3rem",
+        color: "White",
         fontSize: "100px",
-        zIndex: "12",
     },
 
     descContainer: {
@@ -47,32 +46,32 @@ const useStyles = makeStyles({
 const Home = () => {
     const classes = useStyles();
     return (
-        
-        <Box className={classes.boxContainer}>
-            <Box className={classes.titleContainer}>
-                <Typography >
+        <div
+            id="home" 
+            className={classes.root}
+        >
+            <Card className={classes.mainCard}>
+                <Typography className={classes.title}>
                     <Typed className={classes.title} variant="h5"
-                        strings={["Hello my name is"]}
-                        typeSpeed={140}
-                        // backSpeed={2}
-                        // loop
+                    strings={["Hello my name is"]}
+                    typeSpeed={140}
+                    // backSpeed={2}
+                    // loop
                     />
                 </Typography>
-            </Box>
-            <Box className={classes.nameContainer}>                         
                 <Typography >
                     <Typed className={classes.name} variant="h1"
                     strings={["Alicia Gorton"]} 
                     typeSpeed={200}/>
                 </Typography>
-            </Box>
-            <Box className={classes.descContainer} variant="h3">
                 <Typography className={classes.desc} >
                     I'm a full-stack web developer based in Sacramento, CA that enjoys crafting websites, applications, and everything in between. I am looking for opportunities of growth in the fields of emerging technology and data science.
                 </Typography>
-            </Box>
-            <MailButton /> 
-        </Box>
+                <MailButton /> 
+            
+            </Card>
+        </div>
+     
     );
 };
 

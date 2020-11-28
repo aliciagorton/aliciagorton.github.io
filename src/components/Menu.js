@@ -13,15 +13,16 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+// import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
+// import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
 import Experience from './Experience';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const drawerWidth = 240;
 
@@ -49,14 +50,17 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: 36,
+
   },
   hide: {
     display: 'none',
+    backgroundColor: '#082738',
   },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
     whiteSpace: 'nowrap',
+    backgroundColor: '#082738',
   },
   drawerOpen: {
     width: drawerWidth,
@@ -149,52 +153,15 @@ export default function MiniDrawer() {
           </IconButton>
         </div>
         <Divider />
-        <List>
-          {['Home'].map((text, index) => (
-            <ListItem button component={Link} to="/">
-              <ListItemIcon>{index % 2 === 0 ? <ArrowLeftIcon /> : <ArrowRightIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['About Me'].map((text, index) => (
-            <ListItem button component={Link} to="/about">
-              <ListItemIcon>{index % 2 === 0 ? <ArrowLeftIcon /> : <ArrowRightIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['Projects'].map((text, index) => (
-            <ListItem button component={Link} to="/projects">
-              <ListItemIcon>{index % 2 === 0 ? <ArrowLeftIcon /> : <ArrowRightIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider /> 
-        <List>
-          {['Experience'].map((text, index) => (
-            <ListItem button component={Link} to="/experience">
-              <ListItemIcon>{index % 2 === 0 ? <ArrowLeftIcon /> : <ArrowRightIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['Resume'].map((text, index) => (
-            <ListItem button component={Link} to="/resume">
-              <ListItemIcon>{index % 2 === 0 ? <ArrowLeftIcon /> : <ArrowRightIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List> 
         
+        <List>
+          {[['Home', '#home'], ['About', '#about'], ['Projects', '#projects'], ['Experience', '#experience']].map((nav_item, index) => (
+            <ListItem key={nav_item[0]} button component={Link} to={nav_item[1]}>
+              <ListItemText primary={nav_item[0]} />
+            </ListItem>
+          ))}
+        </List>
+
         <Divider />
       </Drawer>
       <main className={classes.content}>

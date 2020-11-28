@@ -15,6 +15,7 @@
     "react-mailto": "^0.4.0",
     "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.2.2",
     "react-router-redux": "^5.0.0-alpha.9",
     "react-scripts": "4.0.0",
     "react-swipeable-views": "^0.13.9",

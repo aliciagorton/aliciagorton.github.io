@@ -10,14 +10,14 @@ const useStyles = makeStyles({
         justifyContent: "center",
         background: "#082738", 
         boxShadow: "none",
-        padding: "10rem",
+        // padding: "4rem",
 
       },
     imgContainer: {
         marginTop: "40px",
         marginBottom: "40px",
-        paddingLeft: "200px",
-        paddingTop:"40px",
+        // paddingLeft: "200px",
+        paddingTop:"600px",
         borderStyle: "none",
         boxShadow: "none",
     },
@@ -35,10 +35,9 @@ const useStyles = makeStyles({
         display: "flex",
         height: 85,
         width: 85,
-        // paddingLeft: "50px",
         borderRadius: "50%",
         justifyContent: "center",
-        marginLeft: "100px",
+        // marginLeft: "100px",
     },
 
     aboutMe: {
@@ -58,12 +57,28 @@ function About() {
     const classes = useStyles();
 
     return (
-        <div container item xs={12}
-        className={classes.root}>
-            <Grid container spacing={2} direction="row" justify="space-evenly" className={classes.imgContainer}
+        <div 
+            id="about"
+            // container 
+            // item 
+            // xs={12}
+            className={classes.root}
+        >
+            <Grid 
+                container 
+                spacing={2} 
+                direction="row" 
+                justify="space-evenly" 
+                className={classes.imgContainer}
             >           
                  
-                <div container item xs={12} sm={10} md={8}>
+                <div 
+                    // container 
+                    // item 
+                    // xs={12} 
+                    // sm={10} 
+                    // md={8}
+                >
                     <AboutCard />      
                 </div> 
                 {/* <Footer />  */}

@@ -1,10 +1,12 @@
 import React from 'react';
 import { 
     Grid,
-    IconButton,
+    Button,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import MailOutlinedIcon from '@material-ui/icons/MailOutlined';
+import Icon from '@material-ui/core/Icon';
+
 
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -18,9 +20,10 @@ function MailButton()  {
     return (
         <div>
             <Grid>
-                <IconButton variant="contained" color="primary" size="large" className={classes.button} endIcon={<MailOutlinedIcon/>} href="mailto:apersigehl@gmail.com" target ="_blank">
+                {/* <IconButton variant="contained" color="primary" size="medium" className={classes.button} endIcon={<MailOutlinedIcon/>} href="mailto:apersigehl@gmail.com" target ="_blank"> */}
+                <Button variant="contained" color="primary" size="medium" className={classes.button} endIcon={<Icon><MailOutlinedIcon/></Icon>} href="mailto:apersigehl@gmail.com" target ="_blank">
                 Get In Touch
-                </IconButton>
+                </Button>
             </Grid>
         </div>
     );
