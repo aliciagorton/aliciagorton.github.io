@@ -1,9 +1,6 @@
 import React from 'react';
-import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import ListItem from '@material-ui/core/ListItem';
@@ -14,12 +11,11 @@ import Projects from './Projects';
 import Experience from './Experience';
 import { HashLink as Link } from 'react-router-hash-link';
 
-const drawerWidth = 0;
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    background:"#082738",
+    background: "#082738",
+    backgroundColor: "#082738",
   },
   content: {
     flexGrow: 1,
@@ -29,9 +25,15 @@ const useStyles = makeStyles((theme) => ({
   BTN: {
     color: "white",
     background:"#082738",
+    marginTop: "1rem",
+  },
+  paper: {
+    backgroundColor: "#082738",
     borderRight: "none",
-  }
-
+  },
+  drawer: {
+    backgroundColor: "#082738",
+  },
 }));
 
 export default function MiniDrawer() {
@@ -42,14 +44,22 @@ export default function MiniDrawer() {
     <div className={classes.root}>
       <CssBaseline />
       <Drawer
+        className={classes.drawer}
+        classes={{
+          paper: classes.paper,
+        }}
         variant="permanent"
       >
-        <List className={classes.BTN}>
-          {[['Home', '#home'], ['About', '#about'], ['Projects', '#projects'], ['Experience', '#experience']].map((nav_item, index) => (
-            <ListItem key={nav_item[0]} button component={Link} to={nav_item[1]}>
-              <ListItemText primary={nav_item[0]} />
-            </ListItem>
-          ))}
+        <List 
+          className={ classes.BTN}
+        >
+          {[['Home', '#home'], ['About', '#about'], ['Projects', '#projects'], ['Experience', '#experience']].map(
+            (nav_item, index) => (
+              <ListItem key={nav_item[0]} button component={Link} to={nav_item[1]}>
+                <ListItemText primary={nav_item[0]} />
+              </ListItem>
+            )
+          )}
         </List>
       </Drawer>
       <main className={classes.content}>

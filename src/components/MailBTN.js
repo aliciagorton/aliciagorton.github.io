@@ -12,8 +12,10 @@ const useStyles = makeStyles((theme) => ({
       margin: "2rem",
       fontSize: "1rem",
       padding: "1rem",
-    
       background: "#0288d1",
+    },
+    iconRoot: {
+      width: "1.1em",
     },
   }));
 
@@ -24,13 +26,22 @@ function MailButton() {
     return (
         <div>
             <Button 
-            variant="contained" 
-            color="primary" 
-            size="medium" 
-            className={classes.button} 
-            endIcon={<Icon><MailOutlinedIcon/></Icon>} 
-            href="mailto:apersigehl@gmail.com" target ="_blank">
-            Get In Touch
+              variant="contained" 
+              color="primary" 
+              size="medium" 
+              className={classes.button} 
+              endIcon={
+                <Icon
+                  classes={{
+                    root: classes.iconRoot,
+                  }}  
+                >
+                  <MailOutlinedIcon />
+                </Icon>
+              } 
+              href="mailto:apersigehl@gmail.com" target ="_blank"
+            >
+              Get In Touch
             </Button> 
         </div>
     );

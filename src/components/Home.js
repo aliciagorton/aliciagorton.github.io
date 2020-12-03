@@ -52,8 +52,7 @@ const useStyles = makeStyles({
         // background: "#082738",
         color: "#082738",        
      
-    },
-
+    }
 });
 
 const Home = () => {

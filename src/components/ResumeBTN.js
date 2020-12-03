@@ -6,7 +6,7 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles(theme => ({
-button: {
+  button: {
     background: "#0288d1",
 
     "&:hover": {
@@ -15,8 +15,10 @@ button: {
     padding: "1rem",
     margin: "2rem",
     fontSize: "1rem",
-},
-
+  },
+  iconRoot: {
+    width: "1.1em",
+  },
 }));
 
 function Resume() {
@@ -30,7 +32,14 @@ function Resume() {
             color="primary" 
             size="medium" 
             className={classes.button}
-            endIcon={<Icon><DescriptionIcon/></Icon>} 
+            endIcon={
+              <Icon
+                classes={{
+                  root: classes.iconRoot,
+                }}  
+              >
+                <DescriptionIcon/>
+              </Icon>} 
             href={resume_pdf} 
             target ="_blank">
             Resume
