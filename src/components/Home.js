@@ -1,10 +1,11 @@
 import React from 'react';
 import Typed from 'react-typed';
-import { Typography, Card} from '@material-ui/core';
+import { Typography, Card, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import MailButton from './Button';
+import MailButton from './MailBTN';
 // import Footer from './Footer';
 // import Accordion from './Accordions';
+import Resume from './ResumeBTN.js';
 
 
 //Styling
@@ -12,11 +13,10 @@ const useStyles = makeStyles({
     rootHome: {
         fontSize: "20px",
         background: "#082738",
-       
-        // padding: "10rem",
+        margin:"3rem",
+        padding:"6rem",
     },
     mainCard: {
-        // padding: "3rem",
         background: "#082738",
         textAlign: "center",
         boxShadow: "none",
@@ -39,13 +39,21 @@ const useStyles = makeStyles({
         background: "#082738",
         color: "#082738",        
         boxShadow: "none", 
-        padding: "8em",
+        padding: "4rem",
 
     },
     desc: {
         fontSize: "30px",
         color: "#a7c3d1",
+        padding: "2rem",
+        textAlign: "left",
     },
+    BTN: {
+        // background: "#082738",
+        color: "#082738",        
+     
+    },
+
 });
 
 const Home = () => {
@@ -73,7 +81,15 @@ const Home = () => {
                     <Typography className={classes.desc} >
                         I'm a full-stack web developer based in Sacramento, CA that enjoys crafting websites, applications, and everything in between. I am looking for opportunities of growth in the fields of emerging technology and data science.
                     </Typography>
-                    <MailButton /> 
+                    <Grid 
+                        container 
+                        direction="row"
+                        justify="center"
+                        className={classes.BTN}>
+                        <MailButton /> 
+                        <Resume />
+                    </Grid>
+                   
                 </Card>
             </Card>
         </div>

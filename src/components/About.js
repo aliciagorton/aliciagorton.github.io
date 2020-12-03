@@ -3,13 +3,13 @@ import {makeStyles} from '@material-ui/core/styles';
 import { Grid }  from '@material-ui/core';
 import AboutCard from './AboutCard';
 
-
-
 const useStyles = makeStyles({
     root: {
         justifyContent: "center",
         background: "#082738", 
         boxShadow: "none",
+        margin: "3rem",
+        padding: "4rem",
 
       },
     AboutContainer: {

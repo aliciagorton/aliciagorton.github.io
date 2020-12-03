@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,UAEE,kBAEF,CAEA,MAEE,kBAAkB,CAClB,gBACF","file":"main.ae732a89.chunk.css","sourcesContent":["html, body {\n\n  padding-top: \"70px\";\n  \n}\n\n#root{\n\n  background:#082738;\n  min-height: 100vh;\n}\n"]}

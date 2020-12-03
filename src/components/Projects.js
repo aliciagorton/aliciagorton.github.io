@@ -12,16 +12,20 @@ import {
 } from '@material-ui/core';
 
 //Project Images
-import project1 from './static/comingsoon.jpeg';
-import project2 from './static/Kuma.png';
-import project3 from './static/chuck.png';
-import project4 from './static/burger.png';
+import project1 from './images/comingsoon.jpeg';
+import project2 from './images/Kuma.png';
+import project3 from './images/chuck.png';
+import project4 from './images/burger.png';
 // import { MailRounded } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        background: "#082738",
-        boxShadow: "none", 
+        justifyContent: "center",
+        background: "#082738", 
+        boxShadow: "none",
+        margin: "3rem",
+        padding: "4rem",
+        
     },
     mainCard: {
         marginTop: "30px",

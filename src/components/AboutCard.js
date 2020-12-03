@@ -17,7 +17,7 @@ import Skills from './Skills.js';
 import EducationCard from './EducationCard';
 
 // 
-import img from './static/img.jpeg';
+import img from './images/img.jpeg';
 
 
 const useStyles = makeStyles((theme) => ({

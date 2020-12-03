@@ -1,18 +1,23 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {Typography, Box, Button} from '@material-ui/core';
-import resume from './static/AliciaGorton.pdf';
+import resume from './images/AliciaGorton.pdf';
 import Card from '@material-ui/core/Card';
 import Footer from './Footer';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        // padding: "2rem", 
+        justifyContent: "center",
+        background: "#082738", 
+        boxShadow: "none",
+        margin: "3rem",
+        padding: "4rem",
+      
     },
     mainContainer: {
         marginTop: "30px",
         background: "#a7c3d1",
-        padding: "2rem",
+        // padding: "2rem",
     },
     timeLine: {
         position: "relative",
