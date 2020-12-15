@@ -38,8 +38,6 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     // padding: "2rem",
     background: "#a7c3d1", 
- 
-   
   },
   paragraph: {
     fontSize: "20px",
@@ -56,17 +54,20 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "right",
     fontSize: "40px",
   },
+  avatar:{
+    // margin:" 3rem",
+    // padding: "6rem",
+  },
+  large: {
+    width: theme.spacing(7),
+    height: theme.spacing(7),
+
+  },
 
 }));
 
 export default function AboutCard() {
   const classes = useStyles();
-  // const [expanded, setExpanded] = React.useState(false);
-
-  // const handleExpandClick = () => {
-  //   setExpanded(!expanded);
-  // };
-
   return (
     <Card className={classes.root}>
       <CardContent className={classes.cardContent}>
@@ -77,7 +78,7 @@ export default function AboutCard() {
                   target="_blank"
                   className={classes.iconBTN}
                  
-                  icon={<LinkedInIcon/>}aria-label="github">
+                  icon={<LinkedInIcon/>} aria-label="github">
                   <LinkedInIcon />
               </IconButton>
               <IconButton           
@@ -89,9 +90,10 @@ export default function AboutCard() {
                   <GitHubIcon />          
               </IconButton>
           </div>
-          <Avatar alt="Alicia Gorton" align="Right" src={img} className={classes.img} /> 
-            About Me 
-            
+          <div className={classes.avatar}>
+          About Me 
+          {/* <Avatar alt="Alicia Gorton" align="Right" src={img} className={classes.large} />  */}
+          </div> 
         </Typography>
         <Typography paragraph variant="body2" color="textSecondary" component="p" className={classes.paragraph}>
         A recent graduate of a Full Stack Web Developer bootcamp taught by UC Davis, with a MERN focus.Passionate ​to merge professional background in healthcare with technology.Adept communicator, organizer, and problem solver.Confident in ability to utilize learned skills and ability to strengthen any team.

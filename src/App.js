@@ -8,20 +8,23 @@ import Menu from './components/Menu';
 // import Navbar from './components/Navbar';
 import './App.css';
 
-function App() {
+function App() {  
   return (
       <div className="App">
         {/* <Navbar /> */}
         <CssBaseline/>
         <Menu />
-          <Router>
-            <Switch>
-              <Route exact path="/about" component={About} />
-              <Route exact path="/projects" component={Projects} />
-              <Route exact path="/experience" component={Experience} /> 
-            </Switch>
-          </Router>
+        <Router>
+          <Switch>
+            <Route exact path="/about" component={About} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/experience" component={Experience} /> 
+          </Switch>
+        </Router>
       </div>
+
+
+// style={{background:"#082738"}}
   );
 }
 

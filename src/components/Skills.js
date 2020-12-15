@@ -27,21 +27,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "18px",
     boxShadow: "none",
   },
-}));
 
-// function generate(element) {
-//   return [0, 1, 2].map((value) =>
-//     React.cloneElement(element, {
-//       key: value,
-//     }),
-//   );
-// }
+}));
 
 export default function ListSkills() {
   const classes = useStyles();
-//   const [dense, setDense] = React.useState(false);
-//   const [secondary, setSecondary] = React.useState(false);
-
   return (
     <div className={classes.root}>
       <Grid container spacing={2}>
@@ -50,22 +40,8 @@ export default function ListSkills() {
             Techical SKills 
           </Typography>
           <Typography paragraph className={classes.body}>
-            React   -   MongoDB    -   Express   -   Node   -     MySQL    -    Javascript     -    Css         HTML   -   Bootstrap   -   MaterialUI        
+            React   -    MongoDB    -   Heroku  -  Express   -   Handelbars.js  -   Node.js   -   MySQL   -  API's - jQuery   -   Javascript    -   Css   -   HTML   -   Git/GitHub  - Bootstrap   -   MaterialUI        
           </Typography>
-    
-            {/* <List dense={dense}>
-              {generate(
-                <ListItem>
-                  <ListItemIcon>
-                    <DoubleArrowIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Single-line item"
-                    secondary={secondary ? 'Secondary text' : null}
-                  />
-                </ListItem>,
-              )}
-            </List> */}
         </Grid>
       </Grid>
     </div>

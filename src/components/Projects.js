@@ -12,10 +12,11 @@ import {
 } from '@material-ui/core';
 
 //Project Images
-import project1 from './images/comingsoon.jpeg';
+// import project1 from './images/comingsoon.jpeg';
 import project2 from './images/Kuma.png';
 import project3 from './images/chuck.png';
 import project4 from './images/burger.png';
+import project1 from './images/Leet.jpg'
 // import { MailRounded } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
@@ -103,7 +104,7 @@ const Projects = () => {
                                         Leet
                                         </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
-                                        This will be the final project that is required by the full-stack program. ~ Coming Soon ~
+                                        Leet, an application where a user can create an account. Once login a user will be directed to a dashboard, where a number of features are available. A User will be able to create multiple user profiles, create a pdf from options provided, the ability to upload a pdf to store, and store generated pdf's.
                                         </Typography>
                                     </CardContent>
                                     </CardActionArea>

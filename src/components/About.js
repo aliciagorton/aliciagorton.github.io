@@ -16,8 +16,9 @@ const useStyles = makeStyles({
         // marginTop: "40px",
         // marginBottom: "40px",
         borderStyle: "none",
+        background:"#082738",
         boxShadow: "none",
-    },
+    }
 });
 
 function About() {
