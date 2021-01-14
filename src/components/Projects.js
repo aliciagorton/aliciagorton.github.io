@@ -105,6 +105,11 @@ const Projects = () => {
                                         </Typography>
                                         <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
                                         Leet, an application where a user can create an account. Once login a user will be directed to a dashboard, where a number of features are available. A User will be able to create multiple user profiles, create a pdf from options provided, the ability to upload a pdf to store, and store generated pdf's.
+                                        <br />
+                                        My role was designing the frontend, setting up authentication for our login, and deploying our application to heroku. This project was very challenging everything from merging on Github to deployment on Heroku. 
+                                        <br />
+                                        <br />
+                                        React -  Passport - Express - Node.js - MongoDB - JQuery - Javascript - Material UI - CSS - HTML
                                         </Typography>
                                     </CardContent>
                                     </CardActionArea>
@@ -112,7 +117,7 @@ const Projects = () => {
                                     <Button size="small" className={classes.button} href="https://github.com/aliciagorton" target="_blank">
                                     Repository
                                     </Button>
-                                    <Button size="small" className={classes.button} href="" target="_blank">
+                                    <Button size="small" className={classes.button} href="https://leet-pdf.herokuapp.com/" target="_blank">
                                     Deployed 
                                     </Button>
                                 </CardActions>
