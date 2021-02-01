@@ -15,17 +15,20 @@ const useStyles = makeStyles((theme) => ({
     background: "#3b454a",
     textAlign: "center",
     boxShadow: "none",
+    padding: 25,
    
   },
   title: {
     margin: theme.spacing(4, 0, 2),
     color: "white",
-    fontSize: "30px",
+    fontSize: "45px",
   },
   body: {
     color: "#a7c3d1",
-    fontSize: "18px",
+    fontSize: "20px",
     boxShadow: "none",
+    textAlign: "left",
+    padding: "0.5rem 6rem",
   },
 
 }));
@@ -40,7 +43,13 @@ export default function ListSkills() {
             Techical SKills 
           </Typography>
           <Typography paragraph className={classes.body}>
-            React   -    MongoDB    -   Heroku  -  Express   -   Handelbars.js  -   Node.js   -   MySQL   -  API's - jQuery   -   Javascript    -   Css   -   HTML   -   Git/GitHub  - Bootstrap   -   MaterialUI        
+          Languages: Javascript, jQuery, HTML5, Cascading Style Sheets (CSS), Handlebars
+          </Typography>
+        <Typography paragraph component="p" className={classes.body}>
+          Libraries / Tools: Node.js, MongoDB, Express, MySQL, NoSQL, Git, GitHub, React.js, React, API’s, Caches, Cookies, Local Storage, Responsive Design, SASS, Bootstrap, User Authentication, Material UI, Security and Session Storage 
+          </Typography>
+        <Typography paragraph component="p" className={classes.body}>
+          Competencies/Other: Heroku, Webpack, Data Structures, Data Analysis, Data Science, Algorithms, Microsoft Office, Microsoft Excel, Microsoft Powerpoint
           </Typography>
         </Grid>
       </Grid>

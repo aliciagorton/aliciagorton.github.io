@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#3b454a", 
     boxShadow: "none",
     padding: "1rem",
-    
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
@@ -29,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#a7c3d1", 
     color: "#0f9994",
-    fontSize: "15px",
+    fontSize: "30px",
     boxShadow: "none",
   },
   subHeading: {
@@ -41,13 +40,13 @@ const useStyles = makeStyles((theme) => ({
   },
   subContainer: {
     background: "#a7c3d1", 
-    fontSize: "30px",
+    fontSize: "45px",
     color: "#3b454a",
     justifyItems: "center",
   },
   SwipeableViews:{
     color: "white",
-    fontSize: "15px",
+    fontSize: "25px",
   },
 }));
 
