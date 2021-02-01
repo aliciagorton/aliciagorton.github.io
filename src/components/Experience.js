@@ -159,13 +159,18 @@ const Experience = () => {
                         Sacramento, CA 
                         </Typography>
                         <Typography variant="subtitle1" align="left" className={classes.subHeading}>
-                        Worked in multiple environments to provide ABA therapy; including homes and in schools. Responsible for implementation of the plan of care and a strong relationship with families involved. Diligent documentation, self-sufficient in problem solving, and responsive to all parties involved.
+                        Worked in multiple environments to provide ABA therapy; including homes and in schools. Interpreted and analyzed data to develop strategies for the best care possible and fostered strong relationships with families involved. 
                         <br></br>
-                        Key Accomplishments: E​ncouraged and with recommendations by direct supervisor to apply for promotions within the company, along with being told by families how pivotal my care was to their child.
+                       <ul>
+                           <li>Recommended by direct supervisor to apply for promotions within the company. Finalist in process when pandemic eliminated the role.</li>
+                           <li>Accomplished high goal achievements by meeting industry standard of 80% or higher over consecutive therapy sessions for every new goal. </li>
+                           <li>Collaborated with a team of 3-4 to develop, plan, and implement child’s goals.</li>
+                           <li>Recognized by management for diligent documentation,  self-sufficient problem solving, and being responsive to all parties involved.</li>
+                       </ul>
                         </Typography>
                     </Box>
                     <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-                        June 2019 - October 2020
+                        June 2019 - October 2019
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
                         <Typography variant="h5" align="center" className={classes.subHeading} style={{fontWeight: "bold"}}>
@@ -178,9 +183,13 @@ const Experience = () => {
                         Sacramento, CA 
                         </Typography>
                         <Typography variant="subtitle1" align="left" className={classes.subHeading}>
-                        Delivered direct ABA therapy to children with autism as well as a strong relationship with families involved. On a team that spearheaded the first rollout of online documentation in the company, a part of discussions of how to improve usability and ease within the app.
+                        On a team that spearheaded the first rollout of online documentation in the company.
                         <br></br>
-                        Key Accomplishments: P​assed exam for the state of California to become a Registered Behavioral Technician.
+                        <ul>
+                            <li>Worked cross-functionally with web application developers to give perspective from the field. </li>
+                            <li>Passed exam for the state of California to become a Registered Behavioral Technician achieving over 80% and completing over 120 hours with direct coaching. </li>
+                            <li>Achieved goals weekly by meeting or surpassing the company standard of 85% or higher over consecutive therapy sessions.</li>
+                        </ul>
                         </Typography>
                     </Box>
                         <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
@@ -197,9 +206,13 @@ const Experience = () => {
                             Chicago, IL 
                             </Typography>
                             <Typography variant="subtitle1" align="left" className={classes.subHeading}>
-                            Provided ABA therapy to children with autism, in multiple settings such as community, school, and home environments. Responsibilities included detailed documentation, coaching for teachers, and ability to transmit important information to all parties. Learned invaluable de-escalation and crisis prevention techniques.
+                            Provided ABA therapy to children with autism, in multiple settings such as community, school, and home environments. Responsibilities included detailed documentation, coaching for teachers, and ability to transmit important information to all parties. Learned invaluable de-escalation and crisis prevention techniques. 
                             <br></br>
-                            Key Accomplishments: P​assed CPI (crisis prevention courses).
+                            <ul>
+                            <li>Achieved high success rate with implementation of each goal set for my clients </li>
+                            <li>Met success rate of 80% or higher for two consecutive therapy sessions. </li>
+                            <li>Passed CPI (crisis prevention courses), in order to work on more challenging cases.</li>
+                        </ul>
                             </Typography>
                         </Box>
                         <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
@@ -218,7 +231,11 @@ const Experience = () => {
                             <Typography variant="subtitle1" align="left" className={classes.subHeading}>
                             Helped to design materials for experiments. Tested toddlers, preschoolers, and adults in experiments. Responsible for transcribing transcription, utilizing excel, coding of children's speech, and coding visual fixations into from video recordings.
                             <br></br>
-                            Key Accomplishments: Repeatedly highered back for three semesters.
+                            <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                             </Typography>
                         </Box>
                         <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
