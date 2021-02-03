@@ -206,12 +206,12 @@ const Experience = () => {
                             Chicago, IL 
                             </Typography>
                             <Typography variant="subtitle1" align="left" className={classes.subHeading}>
-                            Provided ABA therapy to children with autism, in multiple settings such as community, school, and home environments. Responsibilities included detailed documentation, coaching for teachers, and ability to transmit important information to all parties. Learned invaluable de-escalation and crisis prevention techniques. 
+                            Administed direct care in ABA therapy to children with autism.  Therapy included multiple settings such as community, school, and home environments. 
                             <br></br>
                             <ul>
                             <li>Achieved high success rate with implementation of each goal set for my clients </li>
                             <li>Met success rate of 80% or higher for two consecutive therapy sessions. </li>
-                            <li>Passed CPI (crisis prevention courses), in order to work on more challenging cases.</li>
+                            <li>Learned invaluable de-escalation and crisis prevention techniques with CPI (crisis prevention courses) training. </li>
                         </ul>
                             </Typography>
                         </Box>
@@ -229,13 +229,13 @@ const Experience = () => {
                             Urbana, IL 
                             </Typography>
                             <Typography variant="subtitle1" align="left" className={classes.subHeading}>
-                            Helped to design materials for experiments. Tested toddlers, preschoolers, and adults in experiments. Responsible for transcribing transcription, utilizing excel, coding of children's speech, and coding visual fixations into from video recordings.
+                            Responsible for implementing experiments in an language acquisition lab. Test subjects included toddlers, preschoolers, and adults. 
                             <br></br>
                             <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                                <li>Collaborated directly with PhD students to design experiements and materials.</li>
+                                <li>Aquired skills in transcribing transcription, utilizing excel, coding of children's speech, and coding visual fixations into from video recordings.</li>
+                                <li>Participated in monthly meetings to check data quality and aquired knowledge in statistcial learning.</li>
+                            </ul>
                             </Typography>
                         </Box>
                         <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
@@ -252,12 +252,16 @@ const Experience = () => {
                             Urbana, IL 
                             </Typography>
                             <Typography variant="subtitle1" align="left" className={classes.subHeading}>
-                            Delivered nursing to patients in outpatient procedures, while also being cross-trained in the scheduling department. Responsible for executing evaluations, interventions and modification of the plan of care individualized to each patient. Impeccable at communication, organizing of materials, and management of time in the production room or scheduling offices.
+                            Delivered nursing to patients in an outpatient procedure department. Responsible for executing evaluations, interventions and modification of the plan of care individualized to each patient.
                             <br></br>
-                            KeyAccomplishments: Cross trained throughout the department.
+                            <ul>
+                                <li>Cross-trained throughout the department</li>
+                                <li>Accomplished high goal achievements by meeting industry standard with State requirments for outpatient procedures.</li>
+                                <li>Recognized for diligent documentation, self-sufficient problem solving, organizition of materials.</li>
+                            </ul>
                             </Typography>
                         </Box>
-                        <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                        {/* <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                         August 2012 to June 2013
                         </Typography>
                         <Box component="div" className={classes.timeLineItem}>
@@ -272,7 +276,7 @@ const Experience = () => {
                             <br></br>
                             KeyAccomplishments: Received numerous complements from families regarding their loved one and passed NCLEX exam. 
                             </Typography>
-                        </Box>
+                        </Box> */}
                     </Box>
                     <Box component="div" style={{textAlign: "center"}}> 
                         <Button className={classes.button}>
